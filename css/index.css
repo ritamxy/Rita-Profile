@@ -29,7 +29,7 @@ body {
   height: 100%;
   min-height: 100%;
   padding: 0 100px;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 .page-content {
@@ -136,7 +136,6 @@ body {
   z-index: 999;
   list-style: none;
   top: 0;
-  -webkit-box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.15);
   box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.15);
   font-size: 28px;
@@ -158,6 +157,51 @@ body {
 
 .social-links ul li {
   display: inline-block;
+}
+
+.linkedin-in::before {
+  content: "\eaca";
+  font-family: "icomoon";
+  vertical-align: middle;
+  color: white;
+  margin-right: 15px;
+  font-size: 20px;
+}
+
+.github::before {
+  content: "\eab0";
+  font-family: "icomoon";
+  vertical-align: middle;
+  color: white;
+  font-size: 20px;
+}
+
+.home::before {
+  content: "\e900";
+  font-family: "icomoon";
+  vertical-align: middle;
+  color: rgb(157, 43, 243);
+}
+
+.about-me::before {
+  content: "\e971";
+  font-family: "icomoon";
+  vertical-align: middle;
+  color: rgb(157, 43, 243);
+}
+
+.resume::before {
+  content: "\e91f";
+  font-family: "icomoon";
+  vertical-align: middle;
+  color: rgb(157, 43, 243);
+}
+
+.contact::before {
+  content: "\e96c";
+  font-family: "icomoon";
+  vertical-align: middle;
+  color: rgb(157, 43, 243);
 }
 
 .header-buttons {
@@ -189,4 +233,62 @@ body {
   line-height: 14px;
   font-size: 12px;
   text-align: center;
+}
+
+.content-area {
+  position: absolute;
+  right: 0;
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  max-width: calc(100% - 380px);
+}
+
+.details-section {
+  position: absolute;
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+  padding: 60px;
+  overflow: hidden;
+}
+
+.row {
+  width: 100%;
+  position: relative;
+  padding: 283px 0;
+}
+
+.title-block {
+  position: relative;
+  text-align: center;
+}
+
+.title-block h2 {
+  font-size: 60px;
+  line-height: 56px;
+  margin: 0 0 10px;
+  text-align: center;
+  color: #222;
+}
+
+.title-block h3 {
+  font-size: 21px;
+  font-weight: normal;
+  line-height: normal;
+  margin: 20px 0 10px;
+  text-align: center;
+  color: #888888;
+}
+
+.page-me {
+  position: absolute;
+  width: 100%;
+  max-width: 1280px;
+  min-height: 80vh;
+  margin: 84vh auto;
+  padding: 0;
+  background: linear-gradient(#9d2bf3, #5050f5);
+  border-radius: 32px;
 }

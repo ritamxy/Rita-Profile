@@ -77,58 +77,8 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  color: brown;
-}
-
 button,
 input {
-  font-family: Microsoft Yahei;
   border: 0;
   outline: none;
-}
-
-.linkedin-in::before {
-  content: "\eaca";
-  font-family: "icomoon";
-  vertical-align: middle;
-  color: white;
-  margin-right: 15px;
-  font-size: 20px;
-}
-
-.github::before {
-  content: "\eab0";
-  font-family: "icomoon";
-  vertical-align: middle;
-  color: white;
-  font-size: 20px;
-}
-
-.home::before {
-  content: "\e900";
-  font-family: "icomoon";
-  vertical-align: middle;
-  color: rgb(157, 43, 243);
-}
-
-.about-me::before {
-  content: "\e971";
-  font-family: "icomoon";
-  vertical-align: middle;
-  color: rgb(157, 43, 243);
-}
-
-.resume::before {
-  content: "\e91f";
-  font-family: "icomoon";
-  vertical-align: middle;
-  color: rgb(157, 43, 243);
-}
-
-.contact::before {
-  content: "\e96c";
-  font-family: "icomoon";
-  vertical-align: middle;
-  color: rgb(157, 43, 243);
 }
