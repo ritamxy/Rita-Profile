@@ -21,14 +21,6 @@ body {
   background-position: center;
   background-position: 50% 50%;
   background-size: cover;
-}
-
-.page {
-  display: block;
-  width: 100%;
-  height: 100%;
-  min-height: 100%;
-  padding: 0 100px;
   overflow: scroll;
 }
 
@@ -36,10 +28,42 @@ body {
   position: relative;
   width: 100%;
   max-width: 1280px;
-  min-height: 80vh;
-  margin: 10vh auto;
+  height: 749.188px;
+  margin: 5vh 5vh;
   padding: 0;
   background: linear-gradient(#9d2bf3, #5050f5);
+  border-radius: 32px;
+}
+
+.page-me {
+  width: 100%;
+  max-width: 100%;
+  max-width: 1280px;
+  min-height: 80vh;
+  margin: 5vh 5vh;
+  padding: 0;
+  background: #fff;
+  border-radius: 32px;
+}
+
+.page-cv {
+  margin: 5vh 5vh;
+  width: 100%;
+  max-width: 1280px;
+  min-height: 80vh;
+  padding: 0;
+  background: #fff;
+  border-radius: 32px;
+  overflow: hidden;
+}
+
+.page-contact {
+  width: 100%;
+  max-width: 1280px;
+  min-height: 80vh;
+  margin: 5vh 5vh 0 5vh;
+  padding: 0;
+  background: #fff;
   border-radius: 32px;
 }
 
@@ -221,7 +245,7 @@ body {
   border-color: #fff;
 }
 
-.header .copyrights {
+.copyright {
   color: #fff;
   width: 380px;
   position: absolute;
@@ -236,8 +260,8 @@ body {
 .content-area {
   position: absolute;
   right: 0;
+  height: 750px;
   background-color: transparent;
-  height: 100%;
   width: 100%;
   max-width: calc(100% - 380px);
 }
@@ -277,16 +301,6 @@ body {
   color: #888888;
 }
 
-.page-me {
-  position: absolute;
-  width: 100%;
-  max-width: 1280px;
-  min-height: 80vh;
-  margin: 82vh auto;
-  padding: 0;
-  background: #fff;
-  border-radius: 32px;
-}
 .intro {
   padding: 60px;
 }
@@ -309,7 +323,9 @@ body {
 .hobby,
 .volunteer,
 .experience,
-.edu {
+.edu,
+.email,
+.linkedin {
   padding: 15px 60px;
 }
 
@@ -317,7 +333,9 @@ body {
 .hobby h2,
 .volunteer h2,
 .experience h2,
-.edu h2 {
+.edu h2,
+.email h2,
+.linkedin h2 {
   color: #5050f5;
   font-size: 21px;
   padding-bottom: 15px;
@@ -325,6 +343,12 @@ body {
 
 .add::before {
   content: "\e947";
+  font-family: "icomoon";
+  margin-right: 5px;
+}
+
+.e-mail::before {
+  content: "\e945";
   font-family: "icomoon";
   margin-right: 5px;
 }
@@ -395,18 +419,18 @@ body {
   margin-right: 5px;
 }
 
-.page-cv {
-  position: absolute;
-  width: 100%;
-  max-width: 1280px;
-  min-height: 80vh;
-  margin: 164vh auto;
-  padding: 0;
-  background: #fff;
-  border-radius: 32px;
+.Lin {
+  text-decoration: underline;
 }
 
-.title-cv {
+.Lin::before {
+  content: "\eac9";
+  font-family: "icomoon";
+  margin-right: 5px;
+}
+
+.title-cv,
+.title-contact {
   padding: 60px 60px 0;
 }
 
